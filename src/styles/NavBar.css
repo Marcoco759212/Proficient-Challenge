@@ -1,0 +1,214 @@
+/*==============================
+         Normal menu
+==============================*/
+.nav-content{
+    /* width: 100%; */
+    height: 6rem;
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-items li{
+    padding: 2rem;
+    margin: 0 2rem;
+}
+
+.nav-items li a{
+    font-family: var(--font-1);
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+/*==============================
+         Small menu
+==============================*/
+
+.smallnav-content{
+    /* width: 100%; */
+    height: 4rem;
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    display: none;
+}
+
+.smallnav-section{
+    width: calc(100% - 4rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.smallnav-button div{
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallnav-button div span{
+    transition: all 0.3s ease-in;
+}
+
+.btn-active {
+    position: relative;
+    width: 3rem;
+    height: .5rem;
+    background-color: var(--color-1);
+    border-radius: 3rem;
+    /* transition: all 0.4s ease-in; */
+}
+
+.btn-active::before{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: .5rem;
+    background-color: var(--color-1);
+    border-radius: 3rem;
+    top: -1rem;
+}
+
+.btn-active::after{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: .5rem;
+    background-color: var(--color-1);
+    border-radius: 3rem;
+    top: 1rem;
+}
+
+.btn-disable {
+    position: relative;
+    width: 3rem;
+    height: .5rem;
+    background-color: var(--color-2);
+    border-radius: 3rem;
+    /* transition: all 0.4s ease-in; */
+}
+
+.btn-disable::before{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: .5rem;
+    background-color: var(--color-1);
+    border-radius: 3rem;
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.btn-disable::after{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: .5rem;
+    background-color: var(--color-1);
+    border-radius: 3rem;
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+.smallnav-items{
+    width: 100%;
+    list-style: none;
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+    transition: all 0.4s ease-in;
+}
+
+.smallnav-items li{
+    padding: 2rem;
+    margin: 0 0;
+}
+
+.smallnav-items li a{
+    font-family: var(--font-1);
+    color: var(--color-1);
+    text-decoration: none;
+}
+
+/*==============================
+            Key frames
+==============================*/
+
+@media screen and (min-width: 3000px) {
+    .nav-content{
+        display: flex;
+    }
+    .smallnav-content{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1600px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+    .nav-content{
+        justify-content: space-between;
+    }
+    .nav-items li{
+        padding: 2rem;
+        margin: 0;
+    }
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+    .nav-content{
+        display: none;
+    }
+    .smallnav-content{
+        display: flex;
+    }
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}

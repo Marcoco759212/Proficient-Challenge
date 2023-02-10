@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+/* pantallas 4K */
+@media screen and (min-width: 3000px) {
+	*,
+	*::before,
+	*::after {
+		font-size: 130%;
+	}
+}
+
+/* laptops, pantallas, grandes
+@media screen and (max-width: 1600px) {
+	*,
+	*::before,
+	*::after {
+		font-size: 90%;
+	}
+} */
+
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+	*,
+	*::before,
+	*::after {
+		font-size: 72%;
+	}
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+	*,
+	*::before,
+	*::after {
+		font-size: 70%;
+	}
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+	*,
+	*::before,
+	*::after {
+		font-size: 66%;
+	}
+}
+
+/* Telefonos */
+@media screen and (max-width: 600px) {
+	*,
+	*::before,
+	*::after {
+		font-size: 62.5%;
+	}
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+	*,
+	*::before,
+	*::after {
+		font-size: 45%;
+	}
+}
+
+p,
+span,
+td {
+	font-size: 2rem;
+	margin: 0;
+}

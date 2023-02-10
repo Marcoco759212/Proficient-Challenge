@@ -1,0 +1,117 @@
+.footer-contetnt{
+    /* width: 100%; */
+    min-height: 20rem;
+    background-color: var(--color-2);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.footer-column{
+    width: 13rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer-desc p{
+    color: var(--color-1);
+    font-family: var(--font-1);
+    margin: 0;
+    font-size: .8rem;
+}
+
+.footer-logo span svg{
+    width: 3rem;
+    height: 3rem;
+}
+
+.footer-social{
+    /* width: 100%; */
+    height: 3rem;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-social span{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid var(--color-1);
+    border-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: .25rem; */
+}
+
+.footer-column h5{
+    color: var(--color-1);
+    font-family: var(--font-1);
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.footer-column span{
+    color: var(--color-1);
+    font-family: var(--font-1);
+    font-size: .8rem;
+}
+
+
+/*==============================
+            Key frames
+==============================*/
+
+@media screen and (min-width: 3000px) {
+
+}
+
+@media screen and (max-width: 2000px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1600px) {
+
+}
+
+/* laptops, pantallas, grandes */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* laptops, pantalladas medianas */
+@media screen and (max-width: 992px) {
+
+}
+
+/* Tabletas medianas */
+@media screen and (max-width: 768px) {
+    .footer-contetnt{
+        justify-content: space-around;
+    }
+}
+
+/* Tabletas, telefonos */
+@media screen and (max-width: 600px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 500px) {
+
+}
+
+/* Telefonos modernos */
+@media screen and (max-width: 400px) {
+
+}
